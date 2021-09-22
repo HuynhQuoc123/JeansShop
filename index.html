@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-xl">
+
+        <div class="nav-mobile text-white">
+            <span class="fa-2x float-left p-2"> LOGO</span>
+            <i class="fa fa-2x fa-bars px-4 py-3 float-right" onclick="showNav()"></i>
+        </div>
+
+        <div id="nav-container">
+            <nav class="float-left" id="nav">
+                <div id="logo" class="p-3">
+                    <i class=" fa fa-2x fa-close float-right" onclick="hideNav()"></i>
+                    <span class="my-2 fa-2x"> LOGO</span>
+                </div>
+                <div id="menu-1">
+                    <ul>
+                        <li>
+                            <a href="">Shirts</a></li>
+                        <li>
+                            <a href="">Dresses</a>
+                        </li>
+                        <li onclick="showSubMenu()">
+                            <a href="">Jeans</a>
+                            <i class="fa fa-caret-down"></i>
+                        </li>
+
+                        <div id="sub-menu-1">
+                            <ul class="sub-menu pl-4 p-3">
+                                <li>
+                                    <a href="">Skinny</a>
+                                </li>
+                                <li>
+                                    <a href="">Relaxed</a>
+                                </li>
+                                <li>
+                                    <a href="">Bootcut</a>
+                                </li>
+                                <li>
+                                    <a href="">Straight</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <li>
+                            <a href="">Jackets</a>
+                        </li>
+                        <li>
+                            <a href="">Gymwear</a>
+                        </li>
+                        <li>
+                            <a href="">Blazers</a>
+                        </li>
+                        <li>
+                            <a href="">Shoes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="menu-2">
+                    <ul>
+                        <li onclick="hideNav()">
+                            <a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="">Newsletter</a></li>
+                        <li onclick="hideNav()">
+                            <a href="#subscribe">Subscribe</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <main class=" bg-light">
+            <header class="py-4 px-3">
+                <span class="fa-2x">Jeans</span>
+                <span class="float-right ">
+                    <i class="fa fa-2x fa-shopping-cart pr-3"></i>
+                    <i class="fa fa-2x fa-search"></i>
+                </span>
+            </header>
+            <div id="slider" class="px-3">
+                <img src="./assets/img/slider.jpg" alt="" class="col-12 p-0">
+
+                <div class="slider-text text-white ">
+                    <h1 style="font-size: 64px;">New arrivals</h1>
+                    <h2 class="my-4">COLLECTION 2016</h2>
+                    <a href="#shop-now">
+                        <button class="btn btn-dark py-2 px-3 ">
+                            SHOW NOW
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+            <section id="shop-now">
+                <p class="px-3">8 items</p>
+                <div class="section-items ">
+                    <div class="item col-lg-3 col-6 float-left ">
+                        <img src="./assets/img/jeans1.jpg" alt="">
+                        <p>Ripped Skinny Jeans <b>$24.99</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left">
+                        <img src="./assets/img/jeans2.jpg" alt="">
+                        <p> Mega Ripped Jeans
+                            <b>$19.99</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left">
+                        <img src="./assets/img/jeans3.jpg" alt="">
+                        <p>Washed Skinny Jeans
+                            <b>$20.50</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left ">
+                        <img src="./assets/img/jeans4.jpg" alt="">
+                        <p>Vintage Skinny Jeans
+                            <b>$14.99</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-items ">
+                    <div class="item col-lg-3 col-6 float-left ">
+                        <img src="./assets/img/jeans2.jpg" alt="">
+                        <p> Mega Ripped Jeans
+                            <b>$19.99</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left">
+                        <img src="./assets/img/jeans3.jpg" alt="">
+                        <p>Washed Skinny Jeans
+                            <b>$20.50</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left">
+                        <img src="./assets/img/jeans4.jpg" alt="">
+                        <p>Vintage Skinny Jeans
+                            <b>$14.99</b></p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                    <div class="item col-lg-3 col-6 float-left ">
+                        <img src="./assets/img/jeans1.jpg" alt="">
+                        <p>
+                            Ripped Skinny Jeans <b>$24.99</b>
+                        </p>
+                        <div class="buy-now p-2 text-center">
+                            <i class="fa fa-shopping-cart pr-3"></i> Buy Now
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="subscribe" class="px-3 py-5 text-white" style="background-color: black;">
+                <h1>Subscribe</h1>
+                <p>To get special offers and VIP treatment:</p>
+                <input type="text" class="col-12 py-2" placeholder="Enter e-mail">
+                <button class="btn btn-danger mt-3">Subscribe</button>
+            </section>
+
+            <section id="contact" class="py-5">
+                <div class="col-4 float-left text-center">
+                    <h4>Contact</h4>
+                    <p style="font-size: 12px;">Questions? Go ahead.</p>
+                    <form action="">
+                        <input type="text" class="col-12 mb-2 py-2" required>
+                        <input type="text" class="col-12 mb-2 py-2" required>
+                        <input type="text" class="col-12 mb-2 py-2" required>
+                        <input type="text" class="col-12 mb-2 py-2" required>
+                        <button class="btn btn-dark col-12 mt-2 py-1">Send</button>
+                    </form>
+                </div>
+                <div class="about col-4 float-left text-center">
+                    <h4 class="mb-4">About</h4>
+                    <p>
+                        <a href="">About us</a>
+                    </p>
+                    <p>
+                        <a href=""></a>
+                    </p>
+                    <p>
+                        <a href="">We're hiring</a>
+                    </p>
+                    <p>
+                        <a href="">Support</a>
+                    </p>
+                    <p>
+                        <a href="">Find store</a>
+                    </p>
+                    <p>
+                        <a href="">Shipment</a>
+                    </p>
+                    <p>
+                        <a href="">Payment</a>
+                    </p>
+                    <p>
+                        <a href="">Gift card</a>
+                    </p>
+                    <p>
+                        <a href="">Return</a>
+                    </p>
+                    <p>
+                        <a href="">Help</a>
+                    </p>
+                </div>
+                <div class="col-4 float-left">
+                    <h4 class="mb-4">Store</h4>
+                    <p>
+                        <i class="fa fa-fw fa-map-marker"></i> Company Name
+                    </p>
+                    <p>
+                        <i class="fa fa-fw fa-phone"></i> 0044123123
+                    </p>
+                    <p>
+                        <i class="fa fa-fw fa-envelope"></i> ex@mail.com
+                    </p>
+
+                    <h4>We accept</h4>
+                    <p>
+                        <i class="fa fa-fw fa-cc-amex"></i> Amex
+                    </p>
+                    <p>
+                        <i class="fa fa-fw fa-credit-card"></i> Credit card
+                    </p>
+
+                    <p class="pt-3">
+                        <a href=""><i class="fa fa-2x fa-facebook-official "></i> </a>
+                        <a href=""><i class="fa fa-2x fa-instagram "></i> </a>
+                        <a href=""><i class="fa fa-2x fa-snapchat "></i> </a>
+                        <a href=""><i class="fa fa-2x fa-pinterest "></i> </a>
+                        <a href=""><i class="fa fa-2x fa-twitter "></i > </a>
+                        <a href=""><i class="fa fa-2x fa-linkedin "></i> </a>
+                    </p>
+                </div>
+            </section>
+
+            <footer class="text-white text-center py-4" style="background-color: black;">
+                Powered by <a href="" class="text-white">@huynhquoc</a>
+            </footer>
+        </main>
+
+
+
+    </div>
+
+    <script>
+        function showSubMenu() {
+            var a = document.getElementById("sub-menu-1");
+            if (a.style.display === 'block') {
+                a.style.display = 'none';
+            } else {
+                a.style.display = 'block';
+            }
+        }
+
+
+
+        function showNav() {
+            var navContainer = document.getElementById("nav-container");
+            navContainer.style.display = 'block';
+        }
+
+        function hideNav() {
+            var navContainer = document.getElementById("nav-container");
+            navContainer.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
